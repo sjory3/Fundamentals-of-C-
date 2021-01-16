@@ -1,0 +1,7 @@
+D:\C#\Fundamentals-of-C-\Exercises cp1\Exercises cp1\obj\Debug\Exercises cp1.csprojAssemblyReference.cache
+D:\C#\Fundamentals-of-C-\Exercises cp1\Exercises cp1\obj\Debug\Exercises cp1.csproj.CoreCompileInputs.cache
+D:\C#\Fundamentals-of-C-\Exercises cp1\Exercises cp1\bin\Debug\Exercises cp1.exe.config
+D:\C#\Fundamentals-of-C-\Exercises cp1\Exercises cp1\bin\Debug\Exercises cp1.exe
+D:\C#\Fundamentals-of-C-\Exercises cp1\Exercises cp1\bin\Debug\Exercises cp1.pdb
+D:\C#\Fundamentals-of-C-\Exercises cp1\Exercises cp1\obj\Debug\Exercises cp1.exe
+D:\C#\Fundamentals-of-C-\Exercises cp1\Exercises cp1\obj\Debug\Exercises cp1.pdb
