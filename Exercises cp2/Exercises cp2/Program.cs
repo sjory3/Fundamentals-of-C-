@@ -10,7 +10,7 @@ namespace Exercises_cp2
     {
         static void Main(string[] args)
         {
-            ex3();
+            ex11();
             Console.ReadLine();
         }
 
@@ -66,6 +66,134 @@ namespace Exercises_cp2
                 Console.WriteLine("its not the same");
             }
         }
+
+        /*Initialize a variable of type int with a value of 256 in
+        hexadecimal format (256 is 100 in a numeral system with base 16).*/
+        static void ex4()
+        {
+            int number256inhex = 0x100;
+            Console.WriteLine(number256inhex);
+        }
+
+        /*Declare a variable of type char and assign it as a value the character,
+        which has Unicode code, 72 (use the Windows calculator in order to find
+        hexadecimal representation of 72).*/
+        static void ex5()
+        {
+            char myChar = '\u0048';
+            Console.WriteLine(myChar);
+        }
+
+        /*Declare a variable isMale of type bool and assign a value to it depending
+        on your gender.
+        */
+        static void ex6()
+        {
+            bool isMale;
+            Console.WriteLine("are you a male? (Y = YES | N = NO)");
+            string respond = Console.ReadLine();
+
+            if (respond == "Y")
+            {
+                isMale = true;
+                Console.WriteLine("you are a male | isMale is set to 'true'");
+            }
+            else if (respond == "N")
+            {
+                isMale = false;
+                Console.WriteLine("you are not male | isMale is set to 'false'");
+            }
+            else
+            {
+                Console.WriteLine("YOU FUCKING MORON");
+            }
+        }
+
+        /*Declare two variables of type string with values "Hello" and "World".
+        Declare a variable of type object. Assign the value obtained of
+        concatenation of the two string variables (add space if necessary) to this
+        variable. Print the variable of type object.
+        */
+        static void ex7()
+        {
+            string hello = "Hello";
+            string world = "World";
+
+            object str = hello + " " + world;
+
+            Console.WriteLine(str);
+        }
+
+        /*Declare two variables of type string and give them values "Hello" and
+        "World". Assign the value obtained by the concatenation of the two
+        variables of type string (do not miss the space in the middle) to a
+        variable of type object. Declare a third variable of type string and
+        initialize it with the value of the variable of type object (you should use
+        type casting).*/
+        static void ex8()
+        {
+            string hello = "Hello";
+            string world = "World";
+
+            object str = hello + " " + world;
+
+            string total =  str.ToString();
+
+            Console.WriteLine(total);
+        }
+
+        /*Declare two variables of type string and assign them a value “The
+        "use" of quotations causes difficulties.” (without the outer quotes).
+        In one of the variables use quoted string and in the other do not use it.
+        */
+        static void ex9()
+        {
+           // string first = "The "use" of quotations causes difficulties.";
+            string second = "The \"use\" of quotations causes difficulties.";
+        }
+
+        /*Write a program to print a figure in the shape of a heart by the sign "o".*/
+        static void ex10()
+        {
+            Console.WriteLine("       oooooo         oooooo          \n" +
+                              "      o      oo     oo      o         \n" +
+                              "     o         oo oo         o        \n" +
+                              "     o           o           o        \n" +
+                              "      o                     o         \n" +
+                              "       o                   o          \n" +
+                              "        o                 o           \n" +
+                              "         o               o            \n" +
+                              "          o             o             \n" +
+                              "           o           o              \n" +
+                              "            o         o               \n" +
+                              "             o       o                \n" +
+                              "              o     o                 \n" +
+                              "               ooooo                  ");
+        }
+
+        /*Write a program that prints on the console isosceles triangle which
+        sides consist of the copyright character "©"*/
+        static void ex11()
+        {
+            Console.WriteLine("© isosceles triangle \u00a9");
+        }
+
+        /*A company dealing with marketing wants to keep a data record of its
+        employees. Each record should have the following characteristic – first
+        name, last name, age, gender (‘m’ or ‘f’) and unique employee number
+        (27560000 to 27569999). Declare appropriate variables needed to
+        maintain the information for an employee by using the appropriate data
+        types and attribute names.
+        */
+        static void ex12()
+        {
+            string firstName;
+            string lastName;
+            byte age;
+            char gender;
+            int employeeNumber;
+        }
+
 
     }
 }
