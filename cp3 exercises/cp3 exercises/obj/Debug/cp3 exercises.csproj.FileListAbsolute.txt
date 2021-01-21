@@ -1,0 +1,7 @@
+D:\C#\Fundamentals-of-C-\cp3 exercises\cp3 exercises\bin\Debug\cp3 exercises.exe.config
+D:\C#\Fundamentals-of-C-\cp3 exercises\cp3 exercises\bin\Debug\cp3 exercises.exe
+D:\C#\Fundamentals-of-C-\cp3 exercises\cp3 exercises\bin\Debug\cp3 exercises.pdb
+D:\C#\Fundamentals-of-C-\cp3 exercises\cp3 exercises\obj\Debug\cp3 exercises.csprojAssemblyReference.cache
+D:\C#\Fundamentals-of-C-\cp3 exercises\cp3 exercises\obj\Debug\cp3 exercises.csproj.CoreCompileInputs.cache
+D:\C#\Fundamentals-of-C-\cp3 exercises\cp3 exercises\obj\Debug\cp3 exercises.exe
+D:\C#\Fundamentals-of-C-\cp3 exercises\cp3 exercises\obj\Debug\cp3 exercises.pdb

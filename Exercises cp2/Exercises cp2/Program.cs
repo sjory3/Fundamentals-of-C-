@@ -10,7 +10,7 @@ namespace Exercises_cp2
     {
         static void Main(string[] args)
         {
-            ex11();
+            ex13();
             Console.ReadLine();
         }
 
@@ -194,6 +194,20 @@ namespace Exercises_cp2
             int employeeNumber;
         }
 
+        /*Declare two variables of type int. Assign to them values 5 and 10
+        respectively. Exchange (swap) their values and print them.*/
+        static void ex13()
+        {
+            int a = 5;
+            int b = 10;
+
+            a = a + b;
+            b = a - b;
+            a = a - b;
+
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+        }
 
     }
 }
