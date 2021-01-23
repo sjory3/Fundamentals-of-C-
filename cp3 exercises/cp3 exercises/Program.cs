@@ -10,7 +10,7 @@ namespace cp3_exercises
     {
         static void Main(string[] args)
         {
-            ex7();
+            ex10();
             Console.ReadLine();
         }
 
@@ -117,7 +117,7 @@ namespace cp3_exercises
             Console.WriteLine("Enter your weight in kg");
             float weight = float.Parse(Console.ReadLine());
 
-            float moonWeight = weight-(weight * 0.17f);
+            float moonWeight = weight - (weight * 0.17f);
 
             Console.WriteLine("ya weight: " + moonWeight + "kg on the moon");
         }
@@ -126,6 +126,90 @@ namespace cp3_exercises
         the circle K({0, 0}, R=5). Explanation: the point {0, 0} is the center of
         the circle and 5 is the radius.*/
         static void ex8()
+        {
+            int[] cords = { 0, 0 };
+            Console.WriteLine("Enter X");
+            cords[0] = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Y");
+            cords[1] = int.Parse(Console.ReadLine());
+
+            int radius = 5;
+
+            bool isInSide = (cords[0] * cords[0]) + (cords[1] * cords[1]) <= (radius * radius);
+
+            if (isInSide)
+            {
+                Console.WriteLine("The point is in side the cirkle");
+            }
+            else
+            {
+                Console.WriteLine("the point is not inside");
+            }
+
+        }
+
+        /*Write an expression that checks for given point {x, y} if it is within the
+        circle K({0, 0}, R=5) and out of the rectangle [{-1, 1}, {5, 5}].
+        Clarification: for the rectangle the lower left and the upper right corners
+        are given*/
+        static void ex9()
+        {
+            int[] cords = { 0, 0 };
+            Console.WriteLine("Enter X");
+            cords[0] = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Y");
+            cords[1] = int.Parse(Console.ReadLine());
+
+            int radius = 5;
+
+            bool isInSide = (cords[0] * cords[0]) + (cords[1] * cords[1]) <= (radius * radius);
+
+            if (isInSide && (cords[0] <= 5 && cords[0] >= -1) && (cords[1] <= 5 && cords[1] >= 1))
+            {
+                Console.WriteLine("The point is in side the cirkle and rectangle");
+            }
+            else if (isInSide)
+            {
+                Console.WriteLine("the point is inside the cirkle but not the rectangle");
+            }
+            else if ((cords[0] <= 5 && cords[0] >= -1) && (cords[1] <= 5 && cords[1] >= 1))
+            {
+                Console.WriteLine("the point is inside the rectangle but not the cirkle");
+            }
+            else
+            {
+                Console.WriteLine("the point is not inside");
+            }
+        }
+
+        /*Write a program that takes as input a four-digit number in format abcd
+        (e.g. 2011) and performs the following actions:
+        - Calculates the sum of the digits (in our example 2+0+1+1 = 4).
+        - Prints on the console the number in reversed order: dcba (in our
+        example 1102).
+        - Puts the last digit in the first position: dabc (in our example 1201).
+        - Exchanges the second and the third digits: acbd (in our example
+        2101).*/
+        static void ex10()
+        {
+            Console.WriteLine("write a 4 digit number");
+            int number = int.Parse(Console.ReadLine());
+            int d = number % 10;
+            int c = (number / 10) % 10;
+            int b = (number / 100) % 10;
+            int a = (number / 1000) % 10;
+
+            Console.WriteLine("the sum of the individual digits are: " + (a + b + c + d));
+            Console.WriteLine("the reverse is: " + d + c + b + a);
+            Console.WriteLine("with the last digit in front: " + d + a + b + c);
+            Console.WriteLine("the second and thrid digit swaped: " + a + c + b + d);
+        }
+
+        /*We are given a number n and a position p. Write a sequence of
+        operations that prints the value of the bit on the position p in the
+        number (0 or 1). Example: n=35, p=5 -> 1. Another example: n=35,
+        p=6 -> 0.*/
+        static void ex11()
         {
 
         }
