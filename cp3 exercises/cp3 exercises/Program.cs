@@ -10,7 +10,7 @@ namespace cp3_exercises
     {
         static void Main(string[] args)
         {
-            ex10();
+            ex14();
             Console.ReadLine();
         }
 
@@ -211,7 +211,97 @@ namespace cp3_exercises
         p=6 -> 0.*/
         static void ex11()
         {
+            Console.WriteLine("input a number");
+            int num = int.Parse(Console.ReadLine());
+            Console.WriteLine("input a position");
+            int pos = int.Parse(Console.ReadLine());
+
+            int i = 1;
+            int mask = i << pos;
+
+            Console.WriteLine((num & mask) != 0 ? 1 : 0);
+        }
+
+        /*Write a Boolean expression that checks if the bit on position p in the
+        integer v has the value 1. Example v=5, p=1 -> false.*/
+        static void ex12()
+        {
+            Console.WriteLine("input number v");
+            int v = int.Parse(Console.ReadLine());
+            Console.WriteLine("input position p");
+            int p = int.Parse(Console.ReadLine());
+
+            int i = 1;
+            int mask = i << p;
+
+            if ((v & mask) != 0)
+            {
+                Console.WriteLine("true");
+            }
+            else
+            {
+                Console.WriteLine("false");
+            }
+        }
+
+        /*We are given the number n, the value v (v = 0 or 1) and the position p.
+        write a sequence of operations that changes the value of n, so the bit on
+        the position p has the value of v. Example: n=35, p=5, v=0 -> n=3.
+        Another example: n=35, p=2, v=1 -> n=39.*/
+        static void ex13()
+        {
+            Console.WriteLine("input a number");
+            int n = int.Parse(Console.ReadLine());
+            Console.WriteLine("input a position");
+            int p = int.Parse(Console.ReadLine());
+            Console.WriteLine("input a binary to change the bit in the number at the position ( 1 or 0)");
+            int v = int.Parse(Console.ReadLine());
+
+            if (v == 1)
+            {
+                n = n | (1 << p);
+            }
+            else if (v == 0)
+            {
+                n = n & (~(1 << p));
+            }
+            else
+            {
+                Console.WriteLine("is SAID 1 or 0");
+            }
+
+            Console.WriteLine(n);
 
         }
+
+        /*Write a program that checks if a given number n (1 < n < 100) is a
+        prime number (i.e. it is divisible without remainder only to itself and 1).*/
+        static void ex14()
+        {
+            Console.WriteLine("input a number");
+            int n = int.Parse(Console.ReadLine());
+            bool sometinhf = true;
+            if (n == 4)
+            {
+                sometinhf = false;
+            }
+            for (int i = 2; i < Math.Sqrt(n); i++)
+            {
+                if (n % i == 0)
+                {
+                    sometinhf = false;
+                }
+            }
+
+            if (sometinhf)
+            {
+                Console.WriteLine("the number: " + n + " is a prime number");
+            }
+            else
+            {
+                Console.WriteLine("the number: " + n + " is not a prime number");
+            }
+        }
+
     }
 }
