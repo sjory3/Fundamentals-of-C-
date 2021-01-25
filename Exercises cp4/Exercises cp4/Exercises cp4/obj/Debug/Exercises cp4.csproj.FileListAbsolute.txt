@@ -1,0 +1,7 @@
+D:\C#\Fundamentals-of-C-\Exercises cp4\Exercises cp4\Exercises cp4\bin\Debug\Exercises cp4.exe.config
+D:\C#\Fundamentals-of-C-\Exercises cp4\Exercises cp4\Exercises cp4\bin\Debug\Exercises cp4.exe
+D:\C#\Fundamentals-of-C-\Exercises cp4\Exercises cp4\Exercises cp4\bin\Debug\Exercises cp4.pdb
+D:\C#\Fundamentals-of-C-\Exercises cp4\Exercises cp4\Exercises cp4\obj\Debug\Exercises cp4.csprojAssemblyReference.cache
+D:\C#\Fundamentals-of-C-\Exercises cp4\Exercises cp4\Exercises cp4\obj\Debug\Exercises cp4.csproj.CoreCompileInputs.cache
+D:\C#\Fundamentals-of-C-\Exercises cp4\Exercises cp4\Exercises cp4\obj\Debug\Exercises cp4.exe
+D:\C#\Fundamentals-of-C-\Exercises cp4\Exercises cp4\Exercises cp4\obj\Debug\Exercises cp4.pdb
